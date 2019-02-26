@@ -1,0 +1,18 @@
+.files-section__heading {
+    padding-bottom: 10px;
+    border-bottom: 1px solid $color-file-heading-separator;
+    margin-bottom: 20px;
+}
+.file {
+    display: flex;
+    padding: 0 0 20px;
+    .file__avatar {
+        width: 55px;
+    }
+    .file__info {
+        padding-left: 20px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+}

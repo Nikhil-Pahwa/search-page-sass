@@ -1,0 +1,46 @@
+// Grid
+html {
+    box-sizing: border-box;
+}
+body {
+    background-color: $color-page-background;
+}
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+.container {
+    display: flex;
+    padding: 27px 20px;
+    .card-list-panel {
+        flex-grow: 1;
+    }
+}
+
+@include breakpoint(tablet) {
+    .container {
+        flex-direction: column;
+    }
+}
+
+.file-list-container {
+    width: 400px;
+}
+
+.files-section {
+    padding-left: 30px;
+    border-left: 1px solid $color-file-section-separator;
+    width: 600px;
+    @include breakpoint(tablet) {
+        & {
+            padding-left: 0;
+            border-left: none;
+            width: 100%;
+        }
+    }
+    section {
+        margin-bottom: 30px;
+    }
+}

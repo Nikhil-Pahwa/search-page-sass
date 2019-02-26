@@ -1,0 +1,58 @@
+// Cards
+.card {
+    display: flex;
+    border-bottom: 1px solid $color-card-separator;
+    padding: 20px 10px 20px 0;
+    margin-right: 30px;
+    &:first-child {
+        padding-top: 0;
+    }
+    .card__avatar {
+        width: 150px;
+        flex-wrap: wrap;
+        flex-shrink: 0;
+    }
+    .card__info,
+    .card__contact {
+        padding-left: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .card__heading {
+        text-transform: uppercase;
+        font-size: $font-size-small;
+        color: $color-card-heading;
+        margin-bottom: 8px;
+    }
+    .card__subject {
+        margin-bottom: 5px;
+    }
+    .card__description {
+        margin-bottom: 5px;
+    }
+    // .card__info {
+    //     width: 35%;
+    // }
+    .card__name {
+        margin-bottom: 5px;
+    }
+    .card__designation {
+        margin-bottom: 3px;
+    }
+    .card__description {
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        width: 100%;
+    }
+    .card_timeline {
+        color: $color-card-timeline;
+        font-size: $font-size-medium;
+    }
+    @include breakpoint(tablet) {
+        &:last-child {
+            border-bottom: 0;
+        }
+    }
+}
