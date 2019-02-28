@@ -6,12 +6,15 @@ header {
         border-bottom: 1px solid $header-menu-border;
         padding: 0;
         li {
-            padding: 10px;
+            padding: 0 0 0.625em 0;
+            margin: 0.625em 1.25em 0;
             cursor: pointer;
+            color: $color-header-text;
             &:first-child {
-                padding-left: 0;
+                margin-left: 0;
             }
             &.active {
+                color: #000;
                 border-bottom: 2px solid $color-header-item-selected;
             }
         }

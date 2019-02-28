@@ -7,43 +7,67 @@
     &:first-child {
         padding-top: 0;
     }
+    &:last-child {
+        border-bottom: none;
+    }
     .card__avatar {
-        width: 150px;
+        width: 6.25em;
+        height: 6.25em;
+        border: 1px solid red;
         flex-wrap: wrap;
         flex-shrink: 0;
+        &.car__avatar--round {
+            border-radius: 50%;
+            overflow: hidden;
+        }
     }
     .card__info,
     .card__contact {
-        padding-left: 20px;
+        padding-left: 1.25em;
         display: flex;
         flex-direction: column;
         justify-content: center;
+        .card__phone {
+            margin-bottom: 0.31em;
+        }
+        // The size is not taking properly for this icon
+        .fa-mobile {
+            font-size: $font-size-x-large;
+        }
+    }
+    .card__contact {
+        font-size: $font-size-medium;
     }
     .card__heading {
         text-transform: uppercase;
         font-size: $font-size-small;
         color: $color-card-heading;
-        margin-bottom: 8px;
+        margin-bottom: 0.5em;
     }
     .card__subject {
-        margin-bottom: 5px;
+        margin-bottom: 0.31em;
+        font-size: $font-size-large;
     }
     .card__description {
-        margin-bottom: 5px;
+        margin-bottom: 0.31em;
+        font-size: $font-size-regular;
     }
     // .card__info {
     //     width: 35%;
     // }
     .card__name {
         margin-bottom: 5px;
+        font-size: $font-size-large;
     }
     .card__designation {
         margin-bottom: 3px;
+        font-size: $font-size-regular;
     }
     .card__description {
         white-space: nowrap;
         text-overflow: ellipsis;
         overflow: hidden;
+        font-size: $font-size-regular;
         width: 100%;
     }
     .card_timeline {

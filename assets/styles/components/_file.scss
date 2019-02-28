@@ -15,4 +15,11 @@
         justify-content: center;
         flex-direction: column;
     }
+    .file__name {
+        margin-bottom: 0.31em;
+    }
+    .file__description {
+        font-size: $font-size-medium;
+        color: $color-file-description;
+    }
 }
