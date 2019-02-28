@@ -27,7 +27,7 @@
         justify-content: center;
         display: table;
         table-layout: fixed;
-        width: 100%;
+        width: 92%;
         @include breakpoint(tablet) {
             & {
                 text-align: center;
@@ -35,6 +35,7 @@
                 margin-top: 1em;
             }
         }
+
         .card__phone {
             margin: 2em 0 0.4em;
         }
