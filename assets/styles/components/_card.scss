@@ -23,11 +23,20 @@
     .card__info,
     .card__contact {
         padding-left: 1.25em;
-        display: flex;
         flex-direction: column;
         justify-content: center;
+        display: table;
+        table-layout: fixed;
+        width: 100%;
+        @include breakpoint(tablet) {
+            & {
+                text-align: center;
+                padding-left: 0;
+                margin-top: 1em;
+            }
+        }
         .card__phone {
-            margin-bottom: 0.31em;
+            margin: 2em 0 0.4em;
         }
         // The size is not taking properly for this icon
         .fa-mobile {
@@ -48,12 +57,9 @@
         font-size: $font-size-large;
     }
     .card__description {
-        margin-bottom: 0.31em;
+        margin-bottom: 0.5em;
         font-size: $font-size-regular;
     }
-    // .card__info {
-    //     width: 35%;
-    // }
     .card__name {
         margin-bottom: 0.31em;
         font-size: $font-size-large;
@@ -74,6 +80,10 @@
         font-size: $font-size-medium;
     }
     @include breakpoint(tablet) {
+        & {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
         &:last-child {
             border-bottom: 0;
         }
