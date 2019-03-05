@@ -14,10 +14,12 @@ body {
 .container {
     display: flex;
     border-bottom: 1px solid $color-card-separator;
-    margin: 1.43em 1.25em;
-    padding: 1.43em 0;
+    flex-grow: 1;
     .card-list-panel {
+        padding: 20px;
         flex-grow: 1;
+        width: 60%;
+        float: left;
     }
 }
 
@@ -32,9 +34,6 @@ body {
 }
 
 .files-section {
-    padding-left: 2.5em;
-    border-left: 1px solid $color-file-section-separator;
-    width: 600px;
     @include breakpoint(tablet) {
         & {
             padding-left: 0;
@@ -42,7 +41,12 @@ body {
             width: 100%;
         }
     }
+    display: inline-block;
+    max-width: 400px;
+    min-width: 400px;
+    padding-left: 4px;
+    flex-grow: 0;
     section {
-        margin-bottom: 1.87em;
+        margin-bottom: 30px;
     }
 }

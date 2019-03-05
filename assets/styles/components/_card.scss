@@ -18,8 +18,7 @@
     .card__avatar {
         width: 5.75em;
         height: 5.75em;
-        flex-wrap: wrap;
-        flex-shrink: 0;
+        float: left;
         &.car__avatar--round {
             border-radius: 50%;
             overflow: hidden;
@@ -28,11 +27,8 @@
     .card__info,
     .card__contact {
         padding-left: 1.25em;
-        flex-direction: column;
-        justify-content: center;
-        display: table;
-        table-layout: fixed;
-        width: 92%;
+        float: left;
+
         @include breakpoint(tablet) {
             & {
                 text-align: center;
@@ -40,13 +36,21 @@
                 margin-top: 1em;
             }
         }
-
         .card__phone {
             margin: 2em 0 0.4em;
         }
         // The size is not taking properly for this icon
         .fa-mobile {
             font-size: $font-size-x-large;
+        }
+    }
+    .card__info {
+        width: 92%;
+    }
+    &.card--with-contacts {
+        .card__info,
+        .card__contact {
+            width: 35.66666667%;
         }
     }
     .card__contact {
@@ -65,6 +69,10 @@
     .card__description {
         margin-bottom: 0.5em;
         font-size: $font-size-regular;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        width: 100%;
     }
     .card__name {
         margin-bottom: 0.31em;

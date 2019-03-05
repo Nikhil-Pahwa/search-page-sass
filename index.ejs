@@ -10,335 +10,337 @@
         <title><%= htmlWebpackPlugin.options.title %></title>
     </head>
     <body>
-        <header>
-            <h1>Searched for: "Test"</h1>
-            <nav>
-                <ul>
-                    <li class="active">Top</li>
-                    <li>Sites (4)</li>
-                    <li>Content (167)</li>
-                    <li>People (72)</li>
-                    <li>Intranet Files (141)</li>
-                    <li>Google Drive Files (197)</li>
-                    <li>Feed</li>
-                </ul>
-            </nav>
-        </header>
-        <main class="container">
-            <section class="card-list-panel">
-                <article class="card">
-                    <div class="card__avatar">
-                        <img src="./assets/images/cards/1.jpg" />
-                    </div>
-                    <div class="card__info">
-                        <div class="card__heading">SITE</div>
-                        <div class="card__subject">Social Events</div>
-                        <div class="card__description">
-                            Activities outside of work
+        <div class="main-app">
+            <header>
+                <h1>Searched for: "Test"</h1>
+                <nav>
+                    <ul>
+                        <li class="active">Top</li>
+                        <li>Sites (4)</li>
+                        <li>Content (167)</li>
+                        <li>People (72)</li>
+                        <li>Intranet Files (141)</li>
+                        <li>Google Drive Files (197)</li>
+                        <li>Feed</li>
+                    </ul>
+                </nav>
+            </header>
+            <main class="container">
+                <section class="card-list-panel">
+                    <article class="card">
+                        <div class="card__avatar">
+                            <img src="./assets/images/cards/1.jpg" />
                         </div>
-                    </div>
-                </article>
-                <article class="card">
-                    <div class="card__avatar">
-                        <img src="./assets/images/cards/2.jpg" />
-                    </div>
-                    <div class="card__info">
-                        <div class="card__heading">BLOG POST</div>
-                        <div class="card__subject">Another news article</div>
-                        <div class="card__description">
-                            Lorem Ipsum is simply dummy text of the printing and
-                            typesetting industry. Lorem Ipsum has been the
-                            industry's standard dummy text ever since the 1500s,
-                            when an unknown printer took a galley of type and
-                            scrambled it to make a type specimen book.
-                        </div>
-                        <div class="card_timeline">
-                            By <span class="app_link">User name</span> on Aug
-                            17, 2015
-                        </div>
-                    </div>
-                </article>
-                <article class="card">
-                    <div class="card__avatar car__avatar--round">
-                        <img src="./assets/images/cards/3.jpg" />
-                    </div>
-                    <div class="card__info">
-                        <div class="card__heading">Person</div>
-                        <div class="card__name">Emma Okeefe</div>
-                        <div class="card__designation">
-                            Vice President of Sales - Sales
-                        </div>
-                        <div class="card_address">
-                            Milpitas, CA, USA
-                        </div>
-                    </div>
-                    <div class="card__contact">
-                        <div class="card__phone app_link">
-                            <i class="fa fa-phone"></i>+1 (650) 987 5348 (Ext.
-                            +277)
-                        </div>
-                        <div class="card__address app_link">
-                            <i class="fa fa-envelope"></i></i>
-                            emma.okeefa@companyname.com
-                        </div>
-                    </div>
-                </article>
-                <article class="card">
-                    <div class="card__avatar car__avatar--round">
-                        <img src="./assets/images/cards/4.jpg" />
-                    </div>
-                    <div class="card__info">
-                        <div class="card__heading">
-                            Person
-                            <span class="app_link">Expertise match</span>
-                        </div>
-                        <div class="card__name">Joseph T.Greene</div>
-                        <div class="card__designation">
-                            Sales Executive - Sales
-                        </div>
-                        <div class="card_address">
-                            Milpitas, CA, USA
-                        </div>
-                    </div>
-                    <div class="card__contact">
-                        <div class="card__phone app_link">
-                            <i class="fa fa-phone"></i>
-                            +1 (650)-744-5348 (Ext. +277)
-                        </div>
-                        <div class="card__address app_link">
-                            <i class="fa fa-envelope"></i>
-                            adam.shahir@companyname.com
-                        </div>
-                    </div>
-                </article>
-                <article class="card">
-                    <div class="card__avatar car__avatar--round">
-                        <img src="./assets/images/cards/5.jpg" />
-                    </div>
-                    <div class="card__info">
-                        <div class="card__heading">
-                            Person
-                        </div>
-                        <div class="card__name">Jacqueline M.Goodrich</div>
-                        <div class="card__designation">
-                            Product Manager
-                        </div>
-                        <div class="card_address">
-                            Brighton, UK
-                        </div>
-                    </div>
-                    <div class="card__contact">
-                        <div class="card__phone app_link">
-                        <i class="fa fa-mobile"></i>
-                            +44 9870 654 321
-                        </div>
-                    </div>
-                </article>
-                <article class="card">
-                    <div class="card__avatar">
-                        <img src="./assets/images/cards/2.jpg" />
-                    </div>
-                    <div class="card__info">
-                        <div class="card__heading">SITE</div>
-                        <div class="card__subject">Technical Support</div>
-                    </div>
-                </article>
-                <article class="card">
-                    <div class="card__avatar">
-                        <img src="./assets/images/cards/6.jpg" />
-                    </div>
-                    <div class="card__info">
-                        <div class="card__heading">Page</div>
-                        <div class="card__subject">Another page article</div>
-                        <div class="card__description">
-                            Lorem Ipsum is simply dummy text of the printing and
-                            typesetting industry. Lorem Ipsum has been the
-                            industry's standard dummy text ever since the 1500s,
-                            when an unknown printer took a galley of type and
-                            scrambled it to make a type specimen book.
-                        </div>
-                        <div class="card_timeline">
-                            In <span class="app_link">Cafeteria</span> on Feb
-                            11, 2016 (Edited)
-                        </div>
-                    </div>
-                </article>
-                <article class="card">
-                    <div class="card__avatar">
-                        <img src="./assets/images/cards/4.jpg" />
-                    </div>
-                    <div class="card__info">
-                        <div class="card__heading">Album</div>
-                        <div class="card__subject">Planning for the future</div>
-                        <div class="card_timeline">
-                            In <span class="app_link">Human Resources</span> on
-                            Aug 17, 2015
-                        </div>
-                    </div>
-                </article>
-            </section>
-            <aside class="files-section">
-                <section>
-                    <div class="files-section__heading">
-                        Intranet Files (141)
-                    </div>
-                    <div class="file">
-                        <div class="file__avatar">
-                            <img src="./assets/images/files/2.jpg" />
-                        </div>
-                        <div class="file__info">
-                            <div class="file__name">Sales</div>
-                            <div class="file__description">
-                                In <span class="app_link">Sales</span>
+                        <div class="card__info">
+                            <div class="card__heading">SITE</div>
+                            <div class="card__subject">Social Events</div>
+                            <div class="card__description">
+                                Activities outside of work
                             </div>
                         </div>
-                    </div>
-                    <div class="file">
-                        <div class="file__avatar">
-                            <img src="./assets/images/files/folder-icon.png" />
+                    </article>
+                    <article class="card">
+                        <div class="card__avatar">
+                            <img src="./assets/images/cards/2.jpg" />
                         </div>
-                        <div class="file__info">
-                            <div class="file__name">seasons-revenue.xsl</div>
-                            <div class="file__description">
-                                In <span class="app_link">Sales</span>
+                        <div class="card__info">
+                            <div class="card__heading">BLOG POST</div>
+                            <div class="card__subject">Another news article</div>
+                            <div class="card__description">
+                                Lorem Ipsum is simply dummy text of the printing and
+                                typesetting industry. Lorem Ipsum has been the
+                                industry's standard dummy text ever since the 1500s,
+                                when an unknown printer took a galley of type and
+                                scrambled it to make a type specimen book.
+                            </div>
+                            <div class="card_timeline">
+                                By <span class="app_link">User name</span> on Aug
+                                17, 2015
                             </div>
                         </div>
-                    </div>
-                    <div class="file">
-                        <div class="file__avatar">
-                            <img src="./assets/images/files/3.png" />
+                    </article>
+                    <article class="card card--with-contacts">
+                        <div class="card__avatar car__avatar--round">
+                            <img src="./assets/images/cards/3.jpg" />
                         </div>
-                        <div class="file__info">
-                            <div class="file__name">logo.jpg</div>
-                            <div class="file__description">
-                                In <span class="app_link">Branding</span>
+                        <div class="card__info">
+                            <div class="card__heading">Person</div>
+                            <div class="card__name">Emma Okeefe</div>
+                            <div class="card__designation">
+                                Vice President of Sales - Sales
+                            </div>
+                            <div class="card_address">
+                                Milpitas, CA, USA
                             </div>
                         </div>
-                    </div>
-                    <div class="file">
-                        <div class="file__avatar">
-                            <img src="./assets/images/files/4.png" />
-                        </div>
-                        <div class="file__info">
-                            <div class="file__name">
-                                marketing opportunities_in_german
+                        <div class="card__contact">
+                            <div class="card__phone app_link">
+                                <i class="fa fa-phone"></i>+1 (650) 987 5348 (Ext.
+                                +277)
                             </div>
-                            <div class="file__description">
-                                By <span class="app_link">Jane Edwards</span>
+                            <div class="card__address app_link">
+                                <i class="fa fa-envelope"></i></i>
+                                emma.okeefa@companyname.com
                             </div>
                         </div>
-                    </div>
-                    <div class="file">
-                        <div class="file__avatar">
-                            <img src="./assets/images/files/2.jpg" />
+                    </article>
+                    <article class="card card--with-contacts">
+                        <div class="card__avatar car__avatar--round">
+                            <img src="./assets/images/cards/4.jpg" />
                         </div>
-                        <div class="file__info">
-                            <div class="file__name">
-                                pitch_deck_final_final_final.ppt
+                        <div class="card__info">
+                            <div class="card__heading">
+                                Person
+                                <span class="app_link">Expertise match</span>
                             </div>
-                            <div class="file__description">
-                                By <span class="app_link">Jane Edwards</span>
+                            <div class="card__name">Joseph T.Greene</div>
+                            <div class="card__designation">
+                                Sales Executive - Sales
                             </div>
-                        </div>
-                    </div>
-                    <div class="file">
-                        <div class="file__avatar">
-                            <img src="./assets/images/files/1.jpg" />
-                        </div>
-                        <div class="file__info">
-                            <div class="file__name">
-                                barbara-portrait.jpg
-                            </div>
-                            <div class="file__description">
-                                By <span class="app_link">About Company</span>
+                            <div class="card_address">
+                                Milpitas, CA, USA
                             </div>
                         </div>
-                    </div>
-                    <div class="files-section__view-all app_link">
-                        View all Intranet Files
-                    </div>
+                        <div class="card__contact">
+                            <div class="card__phone app_link">
+                                <i class="fa fa-phone"></i>
+                                +1 (650)-744-5348 (Ext. +277)
+                            </div>
+                            <div class="card__address app_link">
+                                <i class="fa fa-envelope"></i>
+                                adam.shahir@companyname.com
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card card--with-contacts">
+                        <div class="card__avatar car__avatar--round">
+                            <img src="./assets/images/cards/5.jpg" />
+                        </div>
+                        <div class="card__info">
+                            <div class="card__heading">
+                                Person
+                            </div>
+                            <div class="card__name">Jacqueline M.Goodrich</div>
+                            <div class="card__designation">
+                                Product Manager
+                            </div>
+                            <div class="card_address">
+                                Brighton, UK
+                            </div>
+                        </div>
+                        <div class="card__contact">
+                            <div class="card__phone app_link">
+                            <i class="fa fa-mobile"></i>
+                                +44 9870 654 321
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <div class="card__avatar">
+                            <img src="./assets/images/cards/2.jpg" />
+                        </div>
+                        <div class="card__info">
+                            <div class="card__heading">SITE</div>
+                            <div class="card__subject">Technical Support</div>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <div class="card__avatar">
+                            <img src="./assets/images/cards/6.jpg" />
+                        </div>
+                        <div class="card__info">
+                            <div class="card__heading">Page</div>
+                            <div class="card__subject">Another page article</div>
+                            <div class="card__description">
+                                Lorem Ipsum is simply dummy text of the printing and
+                                typesetting industry. Lorem Ipsum has been the
+                                industry's standard dummy text ever since the 1500s,
+                                when an unknown printer took a galley of type and
+                                scrambled it to make a type specimen book.
+                            </div>
+                            <div class="card_timeline">
+                                In <span class="app_link">Cafeteria</span> on Feb
+                                11, 2016 (Edited)
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <div class="card__avatar">
+                            <img src="./assets/images/cards/4.jpg" />
+                        </div>
+                        <div class="card__info">
+                            <div class="card__heading">Album</div>
+                            <div class="card__subject">Planning for the future</div>
+                            <div class="card_timeline">
+                                In <span class="app_link">Human Resources</span> on
+                                Aug 17, 2015
+                            </div>
+                        </div>
+                    </article>
                 </section>
-                <section>
-                    <div class="files-section__heading">
-                        Google Drive Files (197)
-                    </div>
-                    <div class="file">
-                        <div class="file__avatar">
-                            <img src="./assets/images/files/2.jpg" />
+                <aside class="files-section">
+                    <section>
+                        <div class="files-section__heading">
+                            Intranet Files (141)
                         </div>
-                        <div class="file__info">
-                            <div class="file__name">Sales</div>
-                            <div class="file__description">
-                                In <span class="app_link">Sales</span>
+                        <div class="file">
+                            <div class="file__avatar">
+                                <img src="./assets/images/files/2.jpg" />
+                            </div>
+                            <div class="file__info">
+                                <div class="file__name">Sales</div>
+                                <div class="file__description">
+                                    In <span class="app_link">Sales</span>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="file">
-                        <div class="file__avatar">
-                            <img src="./assets/images/files/folder-icon.png" />
-                        </div>
-                        <div class="file__info">
-                            <div class="file__name">seasons-revenue.xsl</div>
-                            <div class="file__description">
-                                In <span class="app_link">Sales</span>
+                        <div class="file">
+                            <div class="file__avatar">
+                                <img src="./assets/images/files/folder-icon.png" />
+                            </div>
+                            <div class="file__info">
+                                <div class="file__name">seasons-revenue.xsl</div>
+                                <div class="file__description">
+                                    In <span class="app_link">Sales</span>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="file">
-                        <div class="file__avatar">
-                            <img src="./assets/images/files/3.png" />
-                        </div>
-                        <div class="file__info">
-                            <div class="file__name">logo.jpg</div>
-                            <div class="file__description">
-                                In <span class="app_link">Branding</span>
+                        <div class="file">
+                            <div class="file__avatar">
+                                <img src="./assets/images/files/3.png" />
+                            </div>
+                            <div class="file__info">
+                                <div class="file__name">logo.jpg</div>
+                                <div class="file__description">
+                                    In <span class="app_link">Branding</span>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="file">
-                        <div class="file__avatar">
-                            <img src="./assets/images/files/4.png" />
-                        </div>
-                        <div class="file__info">
-                            <div class="file__name">
-                                marketing opportunities_in_german
+                        <div class="file">
+                            <div class="file__avatar">
+                                <img src="./assets/images/files/4.png" />
                             </div>
-                            <div class="file__description">
-                                By <span class="app_link">Jane Edwards</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="file">
-                        <div class="file__avatar">
-                            <img src="./assets/images/files/2.jpg" />
-                        </div>
-                        <div class="file__info">
-                            <div class="file__name">
-                                pitch_deck_final_final_final.ppt
-                            </div>
-                            <div class="file__description">
-                                By <span class="app_link">Jane Edwards</span>
+                            <div class="file__info">
+                                <div class="file__name">
+                                    marketing opportunities_in_german
+                                </div>
+                                <div class="file__description">
+                                    By <span class="app_link">Jane Edwards</span>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="file">
-                        <div class="file__avatar">
-                            <img src="./assets/images/files/1.jpg" />
-                        </div>
-                        <div class="file__info">
-                            <div class="file__name">
-                                barbara-portrait.jpg
+                        <div class="file">
+                            <div class="file__avatar">
+                                <img src="./assets/images/files/2.jpg" />
                             </div>
-                            <div class="file__description">
-                                By <span class="app_link">About Company</span>
+                            <div class="file__info">
+                                <div class="file__name">
+                                    pitch_deck_final_final_final.ppt
+                                </div>
+                                <div class="file__description">
+                                    By <span class="app_link">Jane Edwards</span>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="files-section__view-all app_link">
-                        View all Google Drive Files
-                    </div>
-                </section>
-            </aside>
-        </main>
+                        <div class="file">
+                            <div class="file__avatar">
+                                <img src="./assets/images/files/1.jpg" />
+                            </div>
+                            <div class="file__info">
+                                <div class="file__name">
+                                    barbara-portrait.jpg
+                                </div>
+                                <div class="file__description">
+                                    By <span class="app_link">About Company</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="files-section__view-all app_link">
+                            View all Intranet Files
+                        </div>
+                    </section>
+                    <section>
+                        <div class="files-section__heading">
+                            Google Drive Files (197)
+                        </div>
+                        <div class="file">
+                            <div class="file__avatar">
+                                <img src="./assets/images/files/2.jpg" />
+                            </div>
+                            <div class="file__info">
+                                <div class="file__name">Sales</div>
+                                <div class="file__description">
+                                    In <span class="app_link">Sales</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="file">
+                            <div class="file__avatar">
+                                <img src="./assets/images/files/folder-icon.png" />
+                            </div>
+                            <div class="file__info">
+                                <div class="file__name">seasons-revenue.xsl</div>
+                                <div class="file__description">
+                                    In <span class="app_link">Sales</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="file">
+                            <div class="file__avatar">
+                                <img src="./assets/images/files/3.png" />
+                            </div>
+                            <div class="file__info">
+                                <div class="file__name">logo.jpg</div>
+                                <div class="file__description">
+                                    In <span class="app_link">Branding</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="file">
+                            <div class="file__avatar">
+                                <img src="./assets/images/files/4.png" />
+                            </div>
+                            <div class="file__info">
+                                <div class="file__name">
+                                    marketing opportunities_in_german
+                                </div>
+                                <div class="file__description">
+                                    By <span class="app_link">Jane Edwards</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="file">
+                            <div class="file__avatar">
+                                <img src="./assets/images/files/2.jpg" />
+                            </div>
+                            <div class="file__info">
+                                <div class="file__name">
+                                    pitch_deck_final_final_final.ppt
+                                </div>
+                                <div class="file__description">
+                                    By <span class="app_link">Jane Edwards</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="file">
+                            <div class="file__avatar">
+                                <img src="./assets/images/files/1.jpg" />
+                            </div>
+                            <div class="file__info">
+                                <div class="file__name">
+                                    barbara-portrait.jpg
+                                </div>
+                                <div class="file__description">
+                                    By <span class="app_link">About Company</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="files-section__view-all app_link">
+                            View all Google Drive Files
+                        </div>
+                    </section>
+                </aside>
+            </main>
+        </div>
     </body>
 </html>
