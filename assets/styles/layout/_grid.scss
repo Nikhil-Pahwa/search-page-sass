@@ -15,25 +15,33 @@ body {
     display: flex;
     border-bottom: 1px solid $color-card-separator;
     flex-grow: 1;
+    margin: 1.43em 1.25em;
+    padding-bottom: 1.43em;
     .card-list-panel {
-        padding: 20px;
         flex-grow: 1;
         width: 60%;
         float: left;
+        @include breakpoint(tablet) {
+            & {
+                width: 100%;
+            }
+        }
     }
 }
 
 @include breakpoint(tablet) {
     .container {
         flex-direction: column;
+        margin: 0.8em 1.25em;
     }
 }
 
-.file-list-container {
-    width: 400px;
-}
-
 .files-section {
+    display: inline-block;
+    width: 400px;
+    flex-grow: 0;
+    padding-left: 2.5em;
+    border-left: 1px solid $color-file-section-separator;
     @include breakpoint(tablet) {
         & {
             padding-left: 0;
@@ -41,12 +49,7 @@ body {
             width: 100%;
         }
     }
-    display: inline-block;
-    max-width: 400px;
-    min-width: 400px;
-    padding-left: 4px;
-    flex-grow: 0;
     section {
-        margin-bottom: 30px;
+        margin-bottom: 1.87em;
     }
 }

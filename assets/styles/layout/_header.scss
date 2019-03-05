@@ -7,7 +7,7 @@ header {
         padding: 0;
         li {
             padding: 0 0 0.625em 0;
-            margin: 0.625em 1.25em 0;
+            margin: 0.625em 1.25em 0 0;
             cursor: pointer;
             color: $color-header-text;
             &:first-child {
@@ -15,15 +15,13 @@ header {
             }
             &.active {
                 color: #000;
+                padding-bottom: 0.4em;
                 border-bottom: 2px solid $color-header-item-selected;
             }
         }
         @include breakpoint(tablet) {
             & {
                 flex-direction: column;
-                li:first-child {
-                    margin: 0.625em 1.25em 0;
-                }
             }
         }
     }

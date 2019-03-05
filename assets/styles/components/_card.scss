@@ -7,6 +7,10 @@
     @include breakpoint(tablet) {
         & {
             margin-right: 0;
+            flex-direction: column;
+        }
+        &:last-child {
+            border-bottom: 0;
         }
     }
     &:first-child {
@@ -19,29 +23,17 @@
         width: 5.75em;
         height: 5.75em;
         float: left;
+        img {
+            width: 5.75em;
+        }
         &.car__avatar--round {
             border-radius: 50%;
             overflow: hidden;
         }
-    }
-    .card__info,
-    .card__contact {
-        padding-left: 1.25em;
-        float: left;
-
         @include breakpoint(tablet) {
             & {
-                text-align: center;
-                padding-left: 0;
-                margin-top: 1em;
+                margin: 0.3em 0 1.25em 0;
             }
-        }
-        .card__phone {
-            margin: 2em 0 0.4em;
-        }
-        // The size is not taking properly for this icon
-        .fa-mobile {
-            font-size: $font-size-x-large;
         }
     }
     .card__info {
@@ -51,6 +43,25 @@
         .card__info,
         .card__contact {
             width: 35.66666667%;
+            @include breakpoint(tablet) {
+                & {
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .card__info,
+    .card__contact {
+        padding-left: 1.25em;
+        float: left;
+        @include breakpoint(tablet) {
+            & {
+                width: 100%;
+                padding-left: 0;
+            }
+        }
+        .card__phone {
+            margin: 1em 0 0.4em;
         }
     }
     .card__contact {
@@ -92,14 +103,5 @@
     .card_timeline {
         color: $color-card-timeline;
         font-size: $font-size-medium;
-    }
-    @include breakpoint(tablet) {
-        & {
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-        &:last-child {
-            border-bottom: 0;
-        }
     }
 }
